@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{{ title }}{% endblock %}</title>
+
+	<meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<script type="text/javascript" src="/static/js/dev-vue.js"></script>
+	{% block css %} {% endblock %}
+
+	{% block js %}{% endblock %}
+</head>
+<body>
+	<!-- Image and text -->
+	<nav class="navbar navbar-light">
+	  <a class="navbar-brand" href="#" style="margin-left:25%">
+	    <img src="/static/img/icon1.png" width="50" height="50" class="d-inline-block align-top" alt="" style="margin-left:30%">
+          <div id = "title">
+              <b style="text-align:center"> Online Chatbot    --    Ask your legal questions here </b>
+          </div>
+	  </a>
+	</nav>
+
+	{% block content %}{% endblock %}
+</body>
+</html>

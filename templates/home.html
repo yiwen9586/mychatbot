@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block js %}
+  <script type="text/javascript" src="/static/js/script.js"></script>
+
+
+{% endblock %}
+
+{% block content %}
+    <body>
+    <div id="panel">
+      <div id="app" class="container top-padding">
+            <div id="conv">
+                <div class="card col-md-6" v-for="message in messages" v-bind:class="{ 'user-message': message.user,  'chat-message': message.chat_bot, 'offset-md-6': message.user}">
+                    <div class="card-body">
+                        [[message.text]]
+                    </div>
+                </div>
+            </div>
+            <div id="text-box" class="row top-padding">
+                    <textarea class="form-control" v-bind:placeholder="placeholder" v-model="input" v-bind:class="{ 'border-danger': send_blank}" v-on:change="check_content"></textarea>
+                    <i class="fas fa-arrow-circle-right send-btn" id="sendbtn" v-on:click="add_message"></i>
+            </div>
+      </div>
+
+        <div id="try"><b>Try this</b>
+            <ul>
+                <li>Query with state:   <br/>Define personal information covered under California data breach law</li><br/>
+                <li>Query without state:  <br/>Define personal information covered data breach law</li><br/>
+                <li>Query without follow-up question:  <br/>Does the Jurisdiction Have Pay Stub/Wage Statement Requirements?</li><br/>
+                <li>Query With follow-up question:  <br/>Does the Jurisdiction Have Pay Stub/Wage Statement Requirements for employer?</li><br/>
+            </ul>
+        </div>
+  </div>
+    </body>
+
+
+
+{% endblock %}
+

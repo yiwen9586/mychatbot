@@ -1,0 +1,109 @@
+body {
+	background-color: rgba(204, 204, 204, 0.6);
+}
+
+.top-padding {
+	margin-top: 10px;
+}
+
+.user-message {
+	background-color: rgba(63, 142, 28, 0.4);
+	margin-right: 10px;
+	margin-top: 5px;
+
+}
+
+.chat-message {
+	background-color: rgba(3, 150, 230, 0.4);
+	max-width: 70%;
+	margin-left: 5px;
+}
+
+.send-btn {
+	position: absolute;
+    top: 12px;
+    font-size: 30px;
+    color: grey;
+    right: 20px;
+}
+
+.send-btn:hover {
+	color: rgba(0, 128, 0, 0.61);
+}
+
+#text-box {
+	grid-area: text;
+	position: relative;
+	bottom: 8px;
+	width: 100%;
+	margin-left: 0;
+}
+
+#text-box textarea {
+	border: 2px solid;
+}
+
+.navbar {
+	background-color: #0006;
+}
+
+#panel {
+	display: grid;
+	grid-gap: 40px;
+	grid-template-columns: 50% auto;
+	grid-template-areas: "app try";
+	height: 800px;
+	margin-top: 40px;
+	width: 80%;
+	margin-left: 40px;
+}
+
+
+#app {
+	grid-area: app;
+    height: 600px;
+	display: grid;
+	grid-gap:0;
+	grid-template-rows: 85% 15%;
+	grid-template-areas: "conv"
+	                     "text";
+}
+
+#app .card {
+	margin-bottom: 5px;
+}
+
+#app p {
+	margin-bottom: 0px;
+}
+
+#title{
+	text-align: center;
+	color: #272727;
+  	font-family: "merriweather", serif;
+}
+
+#conv{
+	grid-area: conv;
+	overflow-y: scroll;
+	background-color: rgba(255, 255, 255, 0.6);
+	box-shadow: #4e555b;
+	border-radius: 4px;
+}
+
+#try{
+	grid-area: try;
+	font-family: 'Andale Mono';
+	font-size: 18px;
+}
+
+#try b{
+    border-bottom: 1.5px dotted;
+    line-height: 2;
+}
+
+
+
+::-webkit-scrollbar{
+display:none;
+}
