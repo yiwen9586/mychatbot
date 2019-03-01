@@ -20,7 +20,7 @@ You can play with the chat bot using: http://yiwen.pythonanywhere.com/
 ## Team Members
 YIWEN JIANG, YAXUE GUO, YU YUAN, TIANLIN LAN, XIAOMENG WANG
 
-<img width="300" height="200" src="./photos/1.jpg"/> <img width="300" height="300" src="./photos/2.jpg"/> <img width="300" height="200" src="./photos/3.jpg"/>
+<img width="250" height="180" src="./photos/1.jpg"/> <img width="250" height="200" src="./photos/2.png"/> <img width="250" height="180" src="./photos/3.jpg"/>
 
 
 ## Reference:
