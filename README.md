@@ -6,13 +6,18 @@ We were given a "database"(12 excel files) which contains answers for legal ques
 If not, we would let user to indicate a state first. Then we would estimate the topic of the query based on term frequency. 
 
 
-Below is our flow chart.
+Below is our flow chart:
+
+<img width="700" height="500" src="./photos/flowchart.png"/>
 
 Due to the privacy issue, I did not put the data source in my git repo.
 
 ## Technical Stack:
 
 Used Django to built up the web application based on out backend python program.
+Here's the sreen shot of the interface:
+
+
 
 ## Online Demo:
 You can play with the chat bot using: http://yiwen.pythonanywhere.com/
