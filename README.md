@@ -22,3 +22,8 @@ You can play with the chat bot using: http://yiwen.pythonanywhere.com/
 ## Reference:
 Hackathon problem statement (Problem 5)
 http://hackathon.lexisnexis.com/fall2018/problemstatement.html
+
+## Requirements:
+Requirements saved in `requirement.txt`
+
+> pip install -r requirement.txt
