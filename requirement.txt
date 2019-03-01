@@ -1,0 +1,5 @@
+Django
+xlrd
+rake_nltk
+nltk
+sklearn
